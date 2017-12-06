@@ -1,0 +1,104 @@
+<html>
+<head>
+</head>
+<body background="red.jpg">
+<style>
+body{
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:absolute;
+background-size: 1370px 700px;
+}
+#d1
+{
+border-style:double;
+border-width:6px;
+position:fixed;
+width:350px;
+left:150px;
+top:150px;
+}
+
+#d2
+{
+border-style:double;
+border-width:6px;
+position:fixed;
+width:400px;
+left:700px;
+top:150px;
+}
+
+#d3
+{
+position:fixed;
+width:300px;
+left:500px;
+top:500px;
+}
+</style>
+<font size="6" align="center"><center> <b>BLOOD REQUEST<b></center> </font>
+<br><hr><hr>
+<div id="d1" align ="center">
+<form name="patient" value="patient" action="patient.php" method="post">
+<font size="5"> <b> PATIENT DETAILS </b> </font>
+<br><br><br>
+<font size="4"> Hospital Name </font>
+&nbsp &nbsp
+<input type="text" name="h_name">
+<br><br>
+<font size="4">Blood Group*  </font>
+&nbsp &nbsp &nbsp
+<select name="p_bloodgroup">
+  <option value="A+">A+     </option>
+  <option value="A-">A-     </option>
+  <option value="B+">B+     </option>
+  <option value="B-">B-     </option>
+  <option value="O+">O+     </option>
+  <option value="O-">O-     </option>
+</select>  
+<br><br>
+ <font size="4"> City*</font>
+&nbsp &nbsp 
+<select name="p_city">
+<option value="Delhi">Delhi</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Kolkata">Kolkata</option>
+<option value="Chennai">Chennai</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Nagpur">Nagpur</option>
+<option value="Pune">Pune</option>
+</select>
+<br><br>
+
+<font size="4"> Medical history* </font>
+&nbsp &nbsp
+<textarea width="10" height="10" name="p_medical"> </textarea><br><br>
+<font size="4"> Doctor Name* </font>
+&nbsp &nbsp
+<input type="text" name="doc_name" required/>
+<br><br>
+</div>
+
+<div id="d2" align="center">
+<font size="5"> <b> Contact Details </b> </font>
+<br><br><br>
+<font size="4">Contact Name*</font>
+&nbsp &nbsp
+<input type="text" name="p_name" required/>
+<br><br>
+<font size="4">Contact Email ID* </font>
+&nbsp &nbsp
+<input type="text" name="p_email" required/>
+<br><br>
+<font size="4">Contact Number* </font>
+&nbsp &nbsp
+<input type="text" name="p_cno" required/>
+<br><br>
+</div>
+<div id="d3" align="center">
+<input type="submit" onclick="alert('successfully registered')">
+</form>
+</div>
+</body>
+</html>

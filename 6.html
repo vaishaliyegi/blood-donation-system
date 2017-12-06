@@ -1,0 +1,102 @@
+<html>
+<head>
+</head>
+<body background="red.jpg">
+<style>
+body{
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:absolute;
+background-size: 1370px 700px;
+}
+
+#d1
+{
+border-style:double;
+border-width:6px;
+position:fixed;
+width:350px;
+left:150px;
+top:150px;
+}
+
+#d2
+{
+border-style:double;
+border-width:6px;
+position:fixed;
+width:400px;
+left:700px;
+top:150px;
+}
+
+#d3
+{
+position:fixed;
+width:300px;
+left:500px;
+top:500px;
+}
+</style>
+<font size="6" ><center> <b>Blood Donar Registration</b></center></font>
+<hr><hr>
+<div id="d1" align="center">
+
+<form name="donor" value="donor" action="signup.php" method="post">
+ <font size="5"> <b><u>Login Details</u></b></font>
+<br><br><br>
+
+<font size="4"> Full Name*</font>
+&nbsp &nbsp
+<input type="text" name="d_name" required>
+<br><br><br>
+<font size="4">Email ID*</font>
+&nbsp &nbsp
+<input type="text" name="d_email" required>
+<br><br><br>
+<font size="4">Password*</font>
+&nbsp &nbsp
+<input type="password" name="d_pswd" required>
+<br><br><br>
+</div>
+
+
+<div id="d2" align="center">
+<font size="5"><b><u>Donor Information</u></b></font>
+<br><br><br>
+
+<font size="4">Contact Number* </font>
+&nbsp &nbsp
+<input type="text" name="d_cno" required>
+<br><br>
+<font size="4">DOB*</font>
+&nbsp &nbsp
+<input type="text" name="d_dob" required>
+<br><br>
+<font size="4">Weight*</font>
+&nbsp &nbsp
+<input type="text" name="d_weight" required>
+<br><br>
+<font size="4">Gender*</font>
+&nbsp &nbsp
+<input type="radio" name="d_gender" value="m" CHECKED> M <input type="radio" name="d_gender" value="f"> F
+<br><br>
+<font size="4">Blood Group*  </font>
+&nbsp &nbsp
+<select name="d_bloodgroup">
+  <option value="A+">A+     </option>
+  <option value="A-">A-     </option>
+  <option value="B+">B+     </option>
+  <option value="B-">B-     </option>
+  <option value="O+">O+     </option>
+  <option value="O-">O-     </option>
+</select>  
+</div>
+<br><br>
+<br><br>
+<div id="d3" align="center">
+<input type="submit" onclick="alert('successfully registered')">
+</div>
+</form>
+</body>
+</html>
